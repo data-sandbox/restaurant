@@ -1,0 +1,128 @@
+:root {
+  --gold: #c59a58;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/src/background.jpg');
+  background-size: cover;
+  color: white;
+}
+
+nav,
+ul,
+main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.3rem;
+}
+
+nav {
+  height: 90px;
+  border-bottom: 2px solid var(--gold);
+  background: rgba(0, 0, 0, 0.5);
+  flex-shrink: 1;
+}
+
+ul {
+  list-style: none;
+  gap: 40px;
+}
+
+.btn-nav {
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-nav:hover {
+  transform: translateY(-10%);
+}
+
+main {
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.name-one {
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 80px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.name-two {
+  margin-top: -20px;
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+hr {
+  width: 290px;
+  border: 1.5px solid var(--gold);
+  margin-bottom: 30px;
+}
+
+p.headline {
+  padding-bottom: 30px;
+}
+
+.btn-menu {
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 0.7rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--gold);
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+}
+
+.btn-menu:hover {
+  color: white;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  gap: 10px;
+  color: var(--gold);
+  border-top: 2px solid var(--gold);
+  background: rgba(0, 0, 0, 0.5);
+  flex-shrink: 1;
+}
+
+.github {
+  height: 1.5rem;
+  fill: var(--gold);
+}
+
+svg {
+  transition: transform 0.5s ease-in-out;
+}
+
+svg:hover {
+  transform: rotate(360deg) scale(1.2);
+}
