@@ -60,6 +60,10 @@ ul {
   transform: translateY(-10%);
 }
 
+.btn-nav.active {
+  border-bottom: 2px solid var(--gold);
+}
+
 main,
 .home,
 .menu,
@@ -138,6 +142,7 @@ main .menu {
   background-color: var(--gold);
   cursor: pointer;
   box-shadow: 1px 1px 3px black;
+  color: black;
 }
 
 .btn-menu:hover {

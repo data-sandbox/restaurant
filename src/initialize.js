@@ -82,8 +82,6 @@ function createFooter() {
 }
 
 function initializePage() {
-  console.log("Initializing the page...")
-
   const content = document.getElementById("content");
   content.appendChild(createHeader());
   content.appendChild(createMain());
