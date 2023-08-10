@@ -2,9 +2,12 @@ function createMenu() {
   const menu = document.createElement('div');
   menu.classList.add('menu');
 
-  for (let i = 0; i < 6; i++) {
-    menu.appendChild(createMenuItem('Item 1', 'Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in.', '$10'));
-  }
+  menu.appendChild(createMenuItem('Double Espresso', 'Drip coffee is boring and today is special.', '$4.75'));
+  menu.appendChild(createMenuItem('Latte', 'Double espresso with steamed cow or special plant-based milk.', '$6'));
+  menu.appendChild(createMenuItem('Nutella Croissant', 'Because Nutella is the best thing ever.', '$5'));
+  menu.appendChild(createMenuItem('Craft Beer', 'All the IPAs. Even so-called "New England" ones.', '$7'));
+  menu.appendChild(createMenuItem('Chipotle Chicken Bowl', 'Full of healthy greens, vegetables, herbs, and dressings.', '$15'));
+  menu.appendChild(createMenuItem('Burrito Bomb', 'Filling is actually mixed before wrapping to disperse all that deliciousness.', '$15'));
 
   return menu;
 }
