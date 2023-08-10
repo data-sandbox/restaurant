@@ -2,6 +2,7 @@ import initializePage from './initialize';
 import loadHome from './home';
 import loadMenu from './menu';
 import loadAbout from './about';
+import setActiveButton from './setActive';
 import './style.css';
 import background from './images/background.jpg'
 
@@ -16,7 +17,6 @@ function addNavEvents() {
 };
 
 function handleHomeClick(e) {
-  console.log(this);
   setActiveButton(this);
   loadHome();
 }
@@ -29,18 +29,6 @@ function handleMenuClick(e) {
 function handleAboutClick(e) {
   setActiveButton(this);
   loadAbout();
-}
-
-function setActiveButton(button) {
-  const buttons = document.querySelectorAll(".btn-nav");
-
-  buttons.forEach((button) => {
-    if (button !== this) {
-      button.classList.remove("active");
-    }
-  });
-
-  button.classList.add("active");
 }
 
 initializePage();

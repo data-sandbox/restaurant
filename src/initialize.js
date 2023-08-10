@@ -27,18 +27,6 @@ function createNav() {
   return nav;
 }
 
-function setActiveButton(button) {
-  const buttons = document.querySelectorAll(".btn-nav");
-
-  buttons.forEach((button) => {
-    if (button !== this) {
-      button.classList.remove("active");
-    }
-  });
-
-  button.classList.add("active");
-}
-
 function createMain() {
   const main = document.createElement('main');
   main.setAttribute('id', 'main');

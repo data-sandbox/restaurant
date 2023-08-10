@@ -1,4 +1,5 @@
 import loadMenu from './menu';
+import setActiveButton from './setActive';
 
 function createHome() {
   const home = document.createElement('div');
@@ -20,7 +21,11 @@ function createHome() {
   const btn = document.createElement('button');
   btn.classList.add('btn-menu');
   btn.textContent = 'Menu';
-  btn.addEventListener('click', loadMenu);
+  btn.addEventListener('click', (e) => {
+    const menuBtn = document.getElementById('menu');
+    setActiveButton(menuBtn);
+    loadMenu();
+  });
 
   const elements = [name1, name2, line, headline, btn];
 
